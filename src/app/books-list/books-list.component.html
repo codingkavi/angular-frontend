@@ -5,13 +5,26 @@
   <tr>
     <th>Author</th>
     <th>Title</th>
+    <th>Publisher</th>
+    <th>Year</th>
+    <th>NoOfPages</th>
+    <th>ISBN</th>
+    <th>Key</th>
+    <th>Genre</th>
   </tr>
   </thead>
   <tbody>
   <tr *ngFor = "let book of books">
-  <td>{{ book.author }}</td>
+    <td>{{ book.author }}</td>
     <td>{{ book.title }}</td>
+    <td>{{ book.publishername}}</td>
+    <td>{{ book.publishedyear}}</td>
+    <td>{{book.noOfPages}}</td>
+    <td>{{ book.isbn }}</td>
+    <td>{{ book.key }}</td>
+    <td>{{ book.genre }}</td>
   </tr>
+
   </tbody>
 </table>
 
