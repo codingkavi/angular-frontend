@@ -8,7 +8,7 @@ import { Books } from './book';
 })
 export class BookService {
 
-   private baseURL = "http://localhost:8080/bookid/101";
+   private baseURL = "/bookid/103";
     constructor(private http : HttpClient){}
     getBooks() : Observable<Books[]>{
           return this.http.get<Books[]>(`${this.baseURL}`);

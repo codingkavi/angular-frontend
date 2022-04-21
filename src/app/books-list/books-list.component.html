@@ -3,6 +3,7 @@
 <table class = "table">
   <thead>
   <tr>
+    <th>BookId</th>
     <th>Author</th>
     <th>Title</th>
     <th>Publisher</th>
@@ -13,19 +14,21 @@
     <th>Genre</th>
   </tr>
   </thead>
+
   <tbody>
   <tr *ngFor = "let book of books">
-    <td>{{ book.author }}</td>
-    <td>{{ book.title }}</td>
-    <td>{{ book.publishername}}</td>
-    <td>{{ book.publishedyear}}</td>
-    <td>{{book.noOfPages}}</td>
-    <td>{{ book.isbn }}</td>
-    <td>{{ book.key }}</td>
-    <td>{{ book.genre }}</td>
+    <td>{{ book.BookId}}</td>
+    <td>{{ book.Author }}</td>
+    <td>{{ book.Title }}</td>
+    <td>{{ book.Publishername}}</td>
+    <td>{{ book.Publishedyear}}</td>
+    <td>{{ book.NoOfPages}}</td>
+    <td>{{ book.Isbn }}</td>
+    <td>{{ book.Key }}</td>
+    <td>{{ book.Genre }}</td>
   </tr>
-
   </tbody>
 </table>
+
 
 
