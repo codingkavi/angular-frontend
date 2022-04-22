@@ -18,7 +18,7 @@ export class BooksListComponent implements OnInit {
     this.callMethod();
   }
     private callMethod() {
-    this.bookService.getBooks()
+    this.bookService.getBooks("author", "Kathryn")
     .subscribe(data =>  {
         this.books = data;
         console.log(data);
