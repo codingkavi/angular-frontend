@@ -17,12 +17,20 @@ export class BooksListComponent implements OnInit {
   ngOnInit(): void {
     this.callMethod();
   }
-    private callMethod() {
+    /* private callMethod() {
     this.bookService.getBooks("author", "Kathryn")
     .subscribe(data =>  {
         this.books = data;
         console.log(data);
+    }); */
+
+    private callMethod(){
+    this.bookService.getBooks("book" , "all")
+    .subscribe(data => {
+        this.books = data;
+        console.log(data);
     });
+    }
 
    /* this.books = [{
 
@@ -37,4 +45,4 @@ export class BooksListComponent implements OnInit {
 
   }
 
-}
+

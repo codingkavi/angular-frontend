@@ -8,9 +8,15 @@ import { Books } from './book';
 })
 export class BookService {
 
-   private baseURL = "/api";
-    constructor(private http : HttpClient){}
+   constructor(private http : HttpClient){}
+
+   /*  private baseURL = "/api";
     getBooks(type: String, input: String) : Observable<Books[]>{
        return this.http.get<Books[]>(`${this.baseURL + '/' + type + '/' + input}`);
+       } */
+
+    private baseURL = "/api";
+    getBooks(type: String, input: String):Observable<Books[]>{
+    return this.http.get<Books[]>(`${this.baseURL + '/' + type + '/' + input}`);
     }
 }

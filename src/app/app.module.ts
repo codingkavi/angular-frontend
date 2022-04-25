@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BooksListComponent } from './books-list/books-list.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { CreateBooksComponent } from './create-books/create-books.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +22,8 @@ import { CreateBooksComponent } from './create-books/create-books.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

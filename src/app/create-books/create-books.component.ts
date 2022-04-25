@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Books } from '../book';
+
 
 @Component({
   selector: 'app-create-books',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateBooksComponent implements OnInit {
 
+   book: Books = new Books();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+  console.log(this.book);
   }
 
 }

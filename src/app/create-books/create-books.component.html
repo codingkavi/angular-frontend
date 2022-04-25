@@ -1,1 +1,48 @@
-<p>create-books works!</p>
+<h2>Create Books</h2>
+<form (ngSubmit) = "onSubmit()">
+
+  <div class = "form-group">
+    <label >Author</label>
+    <input type = "text" class = "form-control"
+    [(ngModel)] = "book.Author" name = "Author">
+    <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+
+  <div class = "form-group">
+    <label for = "title">Book Title</label>
+    <input type = "text" class = "form-control" id = "title" [(ngModel)] = "book.Title" name = "Title">
+  </div>
+
+  <div class = "form-group">
+    <label >Publisher Name</label>
+    <input type = "text" class = "form-control" [(ngModel)] = "book.Publishername" name = "Publishername">
+  </div>
+
+  <div class = "form-group">
+    <label >Published Year</label>
+    <input type = "text" class = "form-control" [(ngModel)] = "book.Publishedyear" name = "Publishedyear">
+  </div>
+
+  <div class = "form-group">
+    <label >ISBN</label>
+    <input type = "text" class = "form-control"  [(ngModel)] = "book.NoOfPages" name = "NoOfPages">
+  </div>
+
+  <div class = "form-group">
+    <label >No of Pages</label>
+    <input type = "text" class = "form-control"  [(ngModel)] = "book.Isbn" name = "Isbn">
+  </div>
+
+
+  <div class = "form-group">
+    <label >Genre</label>
+    <input type = "text" class = "form-control" [(ngModel)] = "book.Genre" name = "Genre">
+  </div>
+
+  <div class = "form-group">
+    <label >Key</label>
+    <input type = "text" class = "form-control"  [(ngModel)] = "book.Key" name = "Key">
+  </div>
+
+  <button class = "btn btn-success" type = "submit">Submit</button>
+</form>
