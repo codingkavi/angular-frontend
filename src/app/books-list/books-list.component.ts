@@ -7,10 +7,10 @@ import { BookService } from '../book.service';
   templateUrl: './books-list.component.html',
   styleUrls: ['./books-list.component.css']
 })
+
 export class BooksListComponent implements OnInit {
 
   books : Books[];
-
 
   constructor(private bookService : BookService) { }
 
@@ -31,6 +31,8 @@ export class BooksListComponent implements OnInit {
         console.log(data);
     });
     }
+
+
 
    /* this.books = [{
 
