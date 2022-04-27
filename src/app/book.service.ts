@@ -9,20 +9,24 @@ import { Books } from './book';
 
 export class BookService {
 
+   private baseURL = "/api";
+
    constructor(private httpClient : HttpClient){}
 
-   /*  private baseURL = "/api";
-    getBooks(type: String, input: String) : Observable<Books[]>{
-       return this.http.get<Books[]>(`${this.baseURL + '/' + type + '/' + input}`);
-       } */
 
-    private baseURL = "/api";
+
+
     getBooks(type: String, input: String):Observable<Books[]>{
     return this.httpClient.get<Books[]>(`${this.baseURL + '/' + type + '/' + input}`);
     }
 
-    private baseURL1 = "/api";
+
     createBook(input : String, book: Books): Observable<Books>{
-    return this.httpClient.post<Books>(`${this.baseURL1 + '/' + input}`, book);
+    return this.httpClient.post<Books>(`${this.baseURL + '/' + input}`, book);
+    }
+
+
+    updateBook(input : String,book : Books): Observable<Books>{
+    return this.httpClient.put<Books>(`${this.baseURL+'/' + input}`, book);
     }
 }

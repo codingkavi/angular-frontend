@@ -7,6 +7,8 @@ import { BooksListComponent } from './books-list/books-list.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { CreateBooksComponent } from './create-books/create-books.component';
 import { FormsModule } from '@angular/forms';
+import { UpdateBookComponent } from './update-book/update-book.component';
+
 
 
 
@@ -16,6 +18,8 @@ import { FormsModule } from '@angular/forms';
     BooksListComponent,
     UserListComponent,
     CreateBooksComponent,
+    UpdateBookComponent,
+
 
 
   ],

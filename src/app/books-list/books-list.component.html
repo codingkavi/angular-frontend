@@ -12,12 +12,13 @@
     <th>ISBN</th>
     <th>Key</th>
     <th>Genre</th>
+    <th>Actions</th>
   </tr>
   </thead>
 
   <tbody>
   <tr *ngFor = "let book of books">
-    <td>{{ book.bookId}}</td>
+    <td>{{ book.bookId }}</td>
     <td>{{ book.author }}</td>
     <td>{{ book.title }}</td>
     <td>{{ book.publisherName}}</td>
@@ -26,6 +27,8 @@
     <td>{{ book.isbn }}</td>
     <td>{{ book.key }}</td>
     <td>{{ book.genre }}</td>
+    <td><button (click) = "updateBook(book.bookId)" class = "btn btn-info">Update</button></td>
+
   </tr>
   </tbody>
 </table>
