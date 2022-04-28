@@ -9,7 +9,7 @@ const routes: Routes = [
 
   { path: 'books', component: BooksListComponent},
   { path: 'create-books', component: CreateBooksComponent},
-  { path: 'update-book/: id' , component: UpdateBookComponent },
+  { path: 'update-book/:id' , component: UpdateBookComponent },
   { path: '' , redirectTo: 'books' ,pathMatch: 'full'}
 
 ];
